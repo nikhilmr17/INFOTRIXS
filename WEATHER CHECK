@@ -1,0 +1,164 @@
+LONDON
+import requests
+import time
+
+API_KEY = 'b3542bdb977e4c3b866170320230211'
+BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+
+def get_weather(city_name):
+    params = {'key': API_KEY, 'q': city_name}
+    response = requests.get(BASE_URL, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        temperature = data['current']['temp_c']
+        description = data['current']['condition']['text']
+        print(f"City: {city_name}")
+        print(f"Temperature: {temperature}°C")
+        print(f"Description: {description}")
+    else:
+        print("Error fetching weather data")
+
+def continuous_weather_update(city_name, refresh_interval):
+    while True:
+        get_weather(city_name)
+        time.sleep(refresh_interval)
+
+
+city = "London" 
+refresh_time = 15
+
+
+continuous_weather_update(city, refresh_time)
+
+GERMANY
+import requests
+import time
+
+API_KEY = 'b3542bdb977e4c3b866170320230211'
+BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+
+def get_weather(city_name):
+    params = {'key': API_KEY, 'q': city_name}
+    response = requests.get(BASE_URL, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        temperature = data['current']['temp_c']
+        description = data['current']['condition']['text']
+        print(f"City: {city_name}")
+        print(f"Temperature: {temperature}°C")
+        print(f"Description: {description}")
+    else:
+        print("Error fetching weather data")
+
+def continuous_weather_update(city_name, refresh_interval):
+    while True:
+        get_weather(city_name)
+        time.sleep(refresh_interval)
+
+
+city = "GERMANY" 
+refresh_time = 15
+
+
+continuous_weather_update(city, refresh_time)
+
+SWEDON
+import requests
+import time
+
+API_KEY = 'b3542bdb977e4c3b866170320230211'
+BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+
+def get_weather(city_name):
+    params = {'key': API_KEY, 'q': city_name}
+    response = requests.get(BASE_URL, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        temperature = data['current']['temp_c']
+        description = data['current']['condition']['text']
+        print(f"City: {city_name}")
+        print(f"Temperature: {temperature}°C")
+        print(f"Description: {description}")
+    else:
+        print("Error fetching weather data")
+
+def continuous_weather_update(city_name, refresh_interval):
+    while True:
+        get_weather(city_name)
+        time.sleep(refresh_interval)
+
+
+city = "SWEDON" 
+refresh_time = 15
+
+
+continuous_weather_update(city, refresh_time)
+
+ABU DHABI
+import requests
+import time
+
+API_KEY = 'b3542bdb977e4c3b866170320230211'
+BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+
+def get_weather(city_name):
+    params = {'key': API_KEY, 'q': city_name}
+    response = requests.get(BASE_URL, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        temperature = data['current']['temp_c']
+        description = data['current']['condition']['text']
+        print(f"City: {city_name}")
+        print(f"Temperature: {temperature}°C")
+        print(f"Description: {description}")
+    else:
+        print("Error fetching weather data")
+
+def continuous_weather_update(city_name, refresh_interval):
+    while True:
+        get_weather(city_name)
+        time.sleep(refresh_interval)
+
+
+city = "ABU DHABI" 
+refresh_time = 15
+
+
+continuous_weather_update(city, refresh_time)
+
+BENGALURU
+import requests
+import time
+
+API_KEY = 'b3542bdb977e4c3b866170320230211'
+BASE_URL = 'https://api.weatherapi.com/v1/current.json'
+
+def get_weather(city_name):
+    params = {'key': API_KEY, 'q': city_name}
+    response = requests.get(BASE_URL, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        temperature = data['current']['temp_c']
+        description = data['current']['condition']['text']
+        print(f"City: {city_name}")
+        print(f"Temperature: {temperature}°C")
+        print(f"Description: {description}")
+    else:
+        print("Error fetching weather data")
+
+def continuous_weather_update(city_name, refresh_interval):
+    while True:
+        get_weather(city_name)
+        time.sleep(refresh_interval)
+
+
+city = "BENGALURU" 
+refresh_time = 15
+
+
+continuous_weather_update(city, refresh_time)
